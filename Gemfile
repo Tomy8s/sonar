@@ -9,6 +9,7 @@ ruby '2.3.1'
 
 gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.0'
+gem 'sqlite3'
 
 
 gem 'jquery-rails'
