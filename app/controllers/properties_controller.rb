@@ -21,7 +21,7 @@ class PropertiesController < ApplicationController
     p response["result"]["locations"]["elements"].size
     puts "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
     # send_back = place_ids
-    render :json => send_back
+    render :json => response["result"]["locations"]["elements"]
   end
 
   def show
