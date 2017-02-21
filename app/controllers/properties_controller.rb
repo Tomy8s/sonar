@@ -23,9 +23,9 @@ class PropertiesController < ApplicationController
   end
 
   def property_search
-    url = "http://index1.homeflow.co.uk/properties/#{params[:property_id]}?api_key=#{ENV['API_key']}"
+    url = "http://index1.homeflow.co.uk/properties/#{params[:property_id]}?api_key=#{ENV['Homeflow_key']}"
     response = HTTParty.get(url).parsed_response
-    render :json => {property: response["result"]["property"], maps_key: ENV['Google_maps']}
+    render :json => {property: response["result"]["property"], maps_key: ENV['Google_key']}
     puts "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
     p response
     puts "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
