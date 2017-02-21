@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app queries Homeflow's database and returns the details of a property given it's property id.
 
-Things you may want to cover:
+Designed with Ruby v 2.3.1 and Rails 5.0.1
 
-* Ruby version
+Run `bundle install` before use.
 
-* System dependencies
+You will need API keys for Homeflow and Google maps.
 
-* Configuration
+Create a file at `config/env.yml` with the content below:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+>Homeflow_key: '_your Homeflow maps key_'  
+>Google_key: '_your Google maps key_'
