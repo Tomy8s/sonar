@@ -11,8 +11,6 @@ gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.0'
 gem 'sqlite3'
 gem 'httparty'
-gem 'dry_ice', '0.1.1'
-gem 'homeflow_api', git: 'git://github.com/homeflow/homeflow_api.git'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'

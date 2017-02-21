@@ -1,7 +1,5 @@
 require 'httparty'
 require 'json'
-require 'homeflow/api'
-require 'dry_ice'
 
 class PropertiesController < ApplicationController
   def index
