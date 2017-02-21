@@ -6,10 +6,7 @@ $(document).on('turbolinks:load', function () {
     console.log(url);
     $.ajax({url: url}).done(function(results){
       console.log(results);
-      
-      // for(var i = 0; i < locations.elements.length; i++) {
-      //   console.log(locations.elements[i].place_id);
-      // };
+      $('#results').append(results.result.property.short_description);
     });
   })
 });
