@@ -10,5 +10,5 @@ You will need API keys for Homeflow and Google maps.
 
 Create a file at `config/env.yml` with the content below:
 
->Homeflow_key: '_your Homeflow maps key_'  
+>Homeflow_key: '_your Homeflow key_'  
 >Google_key: '_your Google maps key_'
