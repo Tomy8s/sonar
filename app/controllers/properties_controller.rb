@@ -1,5 +1,7 @@
 require 'httparty'
 require 'json'
+require 'homeflow/api'
+require 'dry_ice'
 
 class PropertiesController < ApplicationController
   def index
@@ -10,13 +12,13 @@ class PropertiesController < ApplicationController
     response = HTTParty.get(url).parsed_response
     #parsed = JSON.parse(response.parsed_response)
     place_ids = []
-    response["result"]["locations"]["elements"].each { |l| place_ids << l["place_id"]}
     send_back = []
-    place_ids.each do |p|
-      place_url = 'http://index1.homeflow.co.uk/properties/' + p + '?api_key=' + ENV['API_key']
-      place_response = HTTParty.get(url).parsed_response
-      send_back << place_response
-    end
+    # response["result"]["locations"]["elements"].each { |e| place_ids << e["nodes"]}
+    # place_ids.each do |p|
+    #   place_url = 'http://index1.homeflow.co.uk/sites/' + p["site_id"].to_s + '/nodes/' + p["node_id"].to_s + '?api_key=' + ENV['API_key']
+    #   place_response = HTTParty.get(url).parsed_response
+    #   send_back << place_response
+    # end
     puts "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
     p response["result"]["locations"]["elements"].size
     puts "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
