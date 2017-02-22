@@ -12,3 +12,7 @@ Create a file at `config/env.yml` with the content below:
 
 >Homeflow_key: '_your Homeflow key_'  
 >Google_key: '_your Google maps key_'
+
+Start the server and navigate to `localhost:3000`. Here you can enter a property id, for example `4631183`.
+
+Try in production at <https://whispering-hamlet-25689.herokuapp.com/>.
