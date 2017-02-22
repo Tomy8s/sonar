@@ -13,6 +13,7 @@ gem 'pg'
 gem 'httparty'
 
 gem 'jquery-rails'
+gem 'uglifier'
 gem 'turbolinks', '~> 5'
 gem 'envyable'
 
